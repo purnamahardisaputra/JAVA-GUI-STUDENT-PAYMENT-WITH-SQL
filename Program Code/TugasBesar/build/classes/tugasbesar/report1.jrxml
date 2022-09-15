@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b03c8163-9678-47cc-a31e-8d768dcb2f96">
+	<property name="ireport.zoom" value="0.9090909090909117"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="0785f7ef-578b-48a7-8f2d-8f6db8932ff7"/>
+	<queryString language="SQL">
+		<![CDATA[select * from datamahasiswa]]>
+	</queryString>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nim" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="angkatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="semester" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jurusan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fakultas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usersmhs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="passmhs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bppsemester" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="infak" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="beasiswa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totalpembayaran" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="statuspembayaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="79" uuid="2d6cbcb9-6d14-43f4-97ca-8366433c7e7c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="30" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[STRUK PEMBAYARAN MAHASISWA]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="0" y="0" width="100" height="20" uuid="1e084ac3-6021-40e0-80ff-ce2c65047e8c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="35" uuid="f9c5f284-629a-4102-82c2-b5705f7997fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="15"/>
+				</textElement>
+				<text><![CDATA[Tanda Terima Pembayaran Mahasiswa]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="403" splitType="Stretch">
+			<staticText>
+				<reportElement x="16" y="20" width="106" height="20" uuid="69406c00-ed52-4543-b8cc-410e3ebbef15"/>
+				<text><![CDATA[Nama Mahasiswa     : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="54" width="106" height="20" uuid="dd68bb4b-de12-4d67-ad92-a7448b579c42"/>
+				<text><![CDATA[NIM Mahasiswa        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="85" width="106" height="20" uuid="d92b9389-1468-4c6d-96aa-0e17120976ea"/>
+				<text><![CDATA[E-mail Mahasiswa    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="119" width="106" height="20" uuid="020efaed-019a-481c-a1f3-9d045b56a4c5"/>
+				<text><![CDATA[Program Studi         : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="154" width="106" height="20" uuid="c1ab76ff-aa9c-4431-a8de-577da6306178"/>
+				<text><![CDATA[Fakultas                   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="308" width="151" height="20" uuid="d6a6183a-09b5-440f-8a81-68e7c26e8063"/>
+				<text><![CDATA[Beasiswa Mahasiswa           :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="352" width="151" height="20" uuid="6075df00-739b-45d2-bfec-bdbba27c0aed"/>
+				<text><![CDATA[TOTAL PEMBAYARAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="383" width="100" height="20" uuid="378e58ae-52e4-4914-a746-c56703ab1b5f"/>
+				<text><![CDATA[Status Pembayaran]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="136" y="20" width="240" height="20" uuid="13602a40-d741-4b88-8b74-246e5691df95"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="54" width="240" height="20" uuid="ddf570d0-cd15-457e-9ff7-39afb7da5954"/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="85" width="240" height="20" uuid="a1441b81-7798-4f89-849f-8949ef09cd45"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="119" width="240" height="20" uuid="a8f12a36-65a1-4950-abd6-aa7df3c01d77"/>
+				<textFieldExpression><![CDATA[$F{jurusan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="154" width="240" height="20" uuid="e18f3768-7f8a-4b99-b950-b331a240372e"/>
+				<textFieldExpression><![CDATA[$F{fakultas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="234" width="148" height="20" uuid="6ba2fd79-10ce-4f0e-83d6-360061f2c936"/>
+				<textFieldExpression><![CDATA[$F{bppsemester}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="268" width="148" height="20" uuid="24d6520f-e0ed-4a97-aef3-1f95792b5cb2"/>
+				<textFieldExpression><![CDATA[$F{infak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="308" width="148" height="20" uuid="c829b1c2-4605-46ea-9f97-a4e150ce7f36"/>
+				<textFieldExpression><![CDATA[$F{beasiswa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="352" width="148" height="20" uuid="c270275d-a989-4824-8e45-051a97bce51a"/>
+				<textFieldExpression><![CDATA[$F{totalpembayaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="116" y="383" width="120" height="20" uuid="a2b8de2e-0900-45a8-b6b2-46035f45d0b9"/>
+				<textFieldExpression><![CDATA[$F{statuspembayaran}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="16" y="234" width="151" height="20" uuid="47b0e6e0-52af-4508-9f87-2dbaf29efcaf"/>
+				<text><![CDATA[BPP Semester	                : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="188" width="802" height="35" uuid="56c5a583-ae92-4b86-8e09-b6afb12500a1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="15"/>
+				</textElement>
+				<text><![CDATA[Pembayaran yang harus dibayarkan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="268" width="151" height="20" uuid="d8472cd8-e4f0-4b1d-9a3e-8b99020f9cb6"/>
+				<text><![CDATA[Infak Pembangunan            :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="16" y="339" width="372" height="1" uuid="963192a0-520d-4ce2-83f3-ecd3a8494cfd"/>
+			</line>
+			<staticText>
+				<reportElement x="376" y="308" width="23" height="20" uuid="32b9046c-e651-4211-844c-6d228fdfccd8"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="685" y="334" width="56" height="55" uuid="bccf4dbe-c59b-4fca-9637-36fd298b31fc"/>
+				<imageExpression><![CDATA["C:\\Users\\ardie\\Downloads\\WhatsApp Image 2022-07-10 at 14.40.57 (1).jpeg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="684" y="325" width="67" height="20" uuid="0845a50a-e3ab-4239-81b7-aafef29743d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Mengetahui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="676" y="380" width="82" height="20" uuid="7bfac2d6-b9ec-4701-b546-abc198145e1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Bagian Keuangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

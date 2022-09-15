@@ -20,3 +20,14 @@ Location Folder (src -> icon )
 **Jasper (iReport 5.6)**
 Untuk menginstall plugin iReport diharapkan menggunakan NetBeans IDE 8.2 ata sebelumnya (dikarenakan plugin iReport sendiri support NetBeans 8.2 atau lebih kecil)
 Tools ->  Plugins -> Downloaded -> Add Plugins… -> lalu pilih semua file yang ada dalam iReport -> Open -> Install
+
+**SCREENSHOT PROGRAM**
+LOGIN PAGE
+![Login](https://user-images.githubusercontent.com/82191219/190321128-6d0a3ab6-f37a-492b-9d77-77f6bc18cc4e.png)
+DASHBOARD
+![Dashboard](https://user-images.githubusercontent.com/82191219/190321139-4bbaf457-91d5-451d-96bf-c9b6165aa7b4.png)
+CREATE NEW DATABASE
+![Tambah MHS](https://user-images.githubusercontent.com/82191219/190321100-a22ab804-8030-42b7-bb11-2d1a3d456596.png)
+
+**NOTE!!**
+_username & password can be seen in sql database_

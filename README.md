@@ -28,7 +28,7 @@ Tools ->  Plugins -> Downloaded -> Add Plugins… -> lalu pilih semua file yang 
 **NOTE!!**
 _(Username & Password can be seen in sql database)_
 
-**SCREENSHOT PROGRAM**
+# SCREENSHOT PROGRAM
 
 
 **LOGIN PAGE**
